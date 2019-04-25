@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">GetImage</string>
+    <string name="imagemanager_source_chooser_dialog_title">Choose image source</string>
+    <string name="imagemanager_add_image_from_camera_dialog_title">Create new image</string>
+    <string name="imagemanager_add_image_from_gallery_dialog_title">Add from gallery</string>
+    <string name="imagemanager_camera_permission_explanation_title">Camera Permission</string>
+    <string name="imagemanager_camera_permission_explanation_message">The App needs the Camera Permission to be able to create new images.</string>
+    <string name="imagemanager_camera_permission_explanation_retry_title">Camera Permission</string>
+    <string name="imagemanager_camera_permission_explanation_retry_message">Without this permission you will not be able to get new images from your camera.</string>
+    <string name="imagemanager_gallery_permission_explanation_title">External Storage Permission</string>
+    <string name="imagemanager_gallery_permission_explanation_message">The App needs access to your external storage to be able to show your images.</string>
+    <string name="imagemanager_gallery_permission_explanation_retry_title">External Storage Permission</string>
+    <string name="imagemanager_gallery_permission_explanation_retry_message">Without this permission you will not be able to get new images from your gallery.</string>
+
+
+    },
+    permissionRequestPreExecuteExplanation = PermissionRequestExplanation(
+    title = "Camera Permission",
+    message = "The App needs the Camera Permission to be able to create new images."
+    ),
+    permissionRequestRetryExplanation = PermissionRequestExplanation(
+    title = "Retry Custom Permission Hint",
+    message = "You denied the permissions previously but this permissions are needed because ..."
+    ),
+</resources>

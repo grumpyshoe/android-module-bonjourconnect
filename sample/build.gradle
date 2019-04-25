@@ -1,0 +1,35 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion compileSdk
+    defaultConfig {
+        applicationId "com.grumpyshoe.module.networkmanager.sample"
+        minSdkVersion minSdk
+        targetSdkVersion targetSdk
+        versionCode appVersionCode
+        versionName appVersionName
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation libs.appcompat
+    implementation libs.core_ktx
+    implementation libs.material
+    implementation libs.constraint_layout
+    testImplementation libs.junit
+    androidTestImplementation libs.support_test_runner
+    androidTestImplementation libs.espresso_core
+    implementation project(path: ':networkmanager')
+}

@@ -1,0 +1,16 @@
+**/*.iml
+**/.gradle
+**/local.properties
+**/.idea
+**/.DS_Store
+**/build
+**/captures
+**/.externalNativeBuild
+deploy_src
+Gemfile.lock
+**/fastlane/report.xml
+**/fastlane/report.xml
+**/fastlane/deploy-info.txt
+**/fastlane/*.apk
+**/firebase
+**/instrumentation_output.txt
