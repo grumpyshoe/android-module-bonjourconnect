@@ -21,7 +21,7 @@
             app:layout_constraintStart_toEndOf="@+id/editText"
             app:layout_constraintBottom_toBottomOf="@+id/editText"/>
     <androidx.appcompat.widget.AppCompatTextView
-            android:text="Please add service type (e.g. '_my_service._tcp.') \nand click on button"
+            android:text="Please add service type (e.g. '_my_service._tcp.') \nand click on 'SEARCH'"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textView"
@@ -43,7 +43,8 @@
             android:layout_marginTop="8dp"
             app:layout_constraintTop_toTopOf="parent"
             android:layout_marginStart="8dp"
-            app:layout_constraintStart_toStartOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp"/>
 
     <androidx.core.widget.ContentLoadingProgressBar
             style="?android:attr/progressBarStyle"

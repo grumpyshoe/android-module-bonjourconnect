@@ -3,10 +3,6 @@
 buildscript {
     ext {
         kotlin_version = '1.3.21'
-        dagger = '2.12'
-        supportTestVersion = "1.0.1"
-        espressoVersion = "2.2.2"
-        support_version = "28.0.0"
     }
     repositories {
         google()
@@ -14,7 +10,7 @@ buildscript {
         maven { url "https://jitpack.io" }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.3.2'
+        classpath 'com.android.tools.build:gradle:3.4.0'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -33,8 +29,8 @@ allprojects {
         // base config
         compileSdk = 28
         buildTools = "28.0.3"
-        minSdk = 19
-        targetSdk = 27
+        minSdk = 16
+        targetSdk = 28
         buildNumber = 20
         appVersionCode = 1
         appVersionName = "1.1.0"
@@ -45,14 +41,9 @@ allprojects {
                 junit              : ('junit:junit:4.12'),
                 espresso_core      : ("com.android.support.test.espresso:espresso-core:3.0.2"),
                 support_test_runner: ('androidx.test:runner:1.1.1'),
-                support_test_rules : ('com.android.support.test:rules:' + supportTestVersion),
-                mockito_core       : ('org.mockito:mockito-core:1.10.19'),
-                mockito_kotlin     : ("com.nhaarman:mockito-kotlin-kt1.1:1.5.0"),
-                dexmaker_mockito   : ('com.google.dexmaker:dexmaker-mockito:1.2'),
 
                 // android
                 appcompat          : ("androidx.appcompat:appcompat:1.0.2"),
-                support_design     : ("com.android.support:design:$support_version"),
                 constraint_layout  : ("androidx.constraintlayout:constraintlayout:1.1.3"),
                 core_ktx           : ("androidx.core:core-ktx:1.0.1"),
                 material           : ('com.google.android.material:material:1.0.0'),

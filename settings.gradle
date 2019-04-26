@@ -1,1 +1,1 @@
-include ':sample', ':networkmanager'
+include ':sample', ':bonjourconnect'

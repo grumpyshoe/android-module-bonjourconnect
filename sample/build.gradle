@@ -6,7 +6,7 @@ apply plugin: 'kotlin-kapt'
 android {
     compileSdkVersion compileSdk
     defaultConfig {
-        applicationId "com.grumpyshoe.module.networkmanager.sample"
+        applicationId "com.grumpyshoe.module.bonjourconnect.sample"
         minSdkVersion minSdk
         targetSdkVersion targetSdk
         versionCode appVersionCode
@@ -31,5 +31,5 @@ dependencies {
     testImplementation libs.junit
     androidTestImplementation libs.support_test_runner
     androidTestImplementation libs.espresso_core
-    implementation project(path: ':networkmanager')
+    implementation project(path: ':bonjourconnect')
 }
