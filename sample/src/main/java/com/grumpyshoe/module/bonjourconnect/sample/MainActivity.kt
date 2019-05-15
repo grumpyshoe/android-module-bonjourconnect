@@ -33,10 +33,10 @@ class MainActivity : AppCompatActivity() {
                         progressBar.visibility = View.GONE
                     }
                 },
-                onError = {errorType ->
+                onError = { errorType ->
 
                     Handler(Looper.getMainLooper()).post {
-                        val value = when(errorType){
+                        val value = when (errorType) {
                             BonjourConnect.ErrorType.UNKNOWN,
                             BonjourConnect.ErrorType.TIMEOUT -> "Service not Found"
                             else -> "$errorType"
