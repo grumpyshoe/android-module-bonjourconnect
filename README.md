@@ -22,7 +22,7 @@ allprojects {
 
 Add this dependency to your app _build.gradle_:
 ```gradle
-implementation 'com.github.grumpyshoe:android-module-bonjourconnect:1.0.0'
+implementation 'com.github.grumpyshoe:android-module-bonjourconnect:1.0.1'
 ```
 
 ## Usage
@@ -46,7 +46,7 @@ bonjourConnect.getServiceInfo(
 
 If the requested service is found the functin located at `onServiceInfoReceived` is invoked with a parameter of type _NetworkService_. The object contains detail information about _name_, _type_, _host_ and _port_. of the service/server.
 
-If no service is found within 3 seconds (default timeout) the function located at `onError` is invoked with a parameter of type _BonjourConnect.ErrorType_.
+If no service is found within 5 seconds (default timeout) the function located at `onError` is invoked with a parameter of type _BonjourConnect.ErrorType_.
 
 ## Customize
 
